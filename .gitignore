@@ -1,9 +1,14 @@
 locals.zsh
 log/.zsh_history
 projects.zsh
-custom
+#custom
 !custom/plugins/example
 !custom/example.zsh
 *.swp
 !custom/example.zshcache
 cache/
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+\.gitignore
