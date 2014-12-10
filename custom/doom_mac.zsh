@@ -22,12 +22,14 @@ setopt HIST_VERIFY             # Make those history commands nice
 
 if [[ "$OSTYPE" = darwin* ]]; then
   DISABLE_AUTO_UPDATE="false"
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_11.jdk/Contents/Home
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
   export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/apollo/env/envImprovement/bin"
+  export PATH="/apollo/env/ruby193/bin:/apollo/env/SDETools/bin:$PATH"
   export PATH="$HOME:$PATH"
   export PATH="$HOME/bin:$PATH"
   export PATH="/usr/local/bin:$PATH"
   export PATH="/usr/local/sbin:$PATH"
+  export ANT_OPTS='-Dbuild.compiler=javac1.7'
 else
   DISABLE_AUTO_UPDATE="true"
   export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/apollo/env/envImprovement/bin:/apollo/env/SDETools/bin:/apollo/env/BigBirdTools/bin"
